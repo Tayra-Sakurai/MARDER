@@ -41,11 +41,16 @@
     <Folder Include="docs\source\generated\" />
     <Folder Include="docs\source\_static\" />
     <Folder Include="docs\source\_templates\" />
+    <Folder Include="marder\visiualisation\" />
     <Folder Include="test\" />
     <Folder Include="marder\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="docs\source\conf.py" />
+    <Compile Include="marder\visiualisation\_graphs.py" />
+    <Compile Include="marder\visiualisation\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="marder\_csvloader.py" />
     <Compile Include="marder\__init__.py" />
     <Compile Include="test\test_1.py">
@@ -65,6 +70,7 @@
     <Content Include="docs\build\html\genindex.html" />
     <Content Include="docs\build\html\index.html" />
     <Content Include="docs\build\html\marder.html" />
+    <Content Include="docs\build\html\marder.visiualisation.html" />
     <Content Include="docs\build\html\modules.html" />
     <Content Include="docs\build\html\objects.inv" />
     <Content Include="docs\build\html\py-modindex.html" />
@@ -76,6 +82,7 @@
     <Content Include="docs\build\html\_sources\generated\marder.load_csv_as_tex.rst.txt" />
     <Content Include="docs\build\html\_sources\index.rst.txt" />
     <Content Include="docs\build\html\_sources\marder.rst.txt" />
+    <Content Include="docs\build\html\_sources\marder.visiualisation.rst.txt" />
     <Content Include="docs\build\html\_sources\modules.rst.txt" />
     <Content Include="docs\build\html\_static\base-stemmer.js" />
     <Content Include="docs\build\html\_static\basic.css" />

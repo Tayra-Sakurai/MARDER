@@ -1,6 +1,14 @@
 marder package
 ==============
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   marder.visiualisation
+
 Module contents
 ---------------
 
