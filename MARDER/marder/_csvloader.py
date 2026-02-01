@@ -14,6 +14,12 @@ type _Array2D[TValue] = np.ndarray[
     np.dtype[TValue]
 ]
 
+__all__ = [
+    "load_csv_as_matrix",
+    "load_csv_as_tex",
+    "load_headers"
+]
+
 
 def _load_csv_as_reader(
     file: TextIO
@@ -176,4 +182,16 @@ def load_headers(
     ----------
     file : TextIO
         The csv file.
+
+    Returns
+    -------
+    row : List[str]
     """
+    if (not (file.readable() and file.seekable())):
+        raise PermissionError(strerror(EPERM))
+    file.seek(0)
+    dialect = csv.Sniffer.sniff(file.read(1024))
+    file.seek(0)
+    reader = csv.reader(file, dialect=dialect)
+    for row in reader:
+        return row

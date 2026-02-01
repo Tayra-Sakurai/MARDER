@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib.typing as mplt
 from matplotlib import figure, axes
 
+__all__ = [
+    "graph_setup"
+]
+
 
 def graph_setup(
     style: str,

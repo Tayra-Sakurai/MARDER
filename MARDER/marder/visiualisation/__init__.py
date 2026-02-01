@@ -13,3 +13,5 @@ Basic graph generating functions.
    graph_setup
 """
 from ._graphs import *
+
+del _graphs
