@@ -452,8 +452,21 @@
         <span class="p">)</span>
         <span class="n">tf</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">footer</span><span class="p">)</span>
         <span class="n">tf</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">read</span><span class="p">()</span></div>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">result</span></div>
 
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">load_headers</span><span class="p">(</span>
+    <span class="n">file</span><span class="p">:</span> <span class="n">TextIO</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Gets the header row of the csv.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    file : TextIO</span>
+<span class="sd">        The csv file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </pre></div>
 
                 </article>

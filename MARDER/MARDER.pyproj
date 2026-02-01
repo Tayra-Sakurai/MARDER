@@ -67,6 +67,7 @@
     <Content Include="docs\build\html\.buildinfo" />
     <Content Include="docs\build\html\generated\marder.load_csv_as_matrix.html" />
     <Content Include="docs\build\html\generated\marder.load_csv_as_tex.html" />
+    <Content Include="docs\build\html\generated\marder.visiualisation.graph_setup.html" />
     <Content Include="docs\build\html\genindex.html" />
     <Content Include="docs\build\html\index.html" />
     <Content Include="docs\build\html\marder.html" />
@@ -118,8 +119,10 @@
     <Content Include="docs\Makefile" />
     <Content Include="docs\source\generated\marder.load_csv_as_matrix.rst" />
     <Content Include="docs\source\generated\marder.load_csv_as_tex.rst" />
+    <Content Include="docs\source\generated\marder.visiualisation.graph_setup.rst" />
     <Content Include="docs\source\index.rst" />
     <Content Include="docs\source\marder.rst" />
+    <Content Include="docs\source\marder.visiualisation.rst" />
     <Content Include="docs\source\modules.rst" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

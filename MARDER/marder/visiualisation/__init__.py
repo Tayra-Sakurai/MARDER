@@ -7,9 +7,9 @@ Basic Graph System
 
 Basic graph generating functions.
 
-.. autodoc::
+.. autosummary::
    :toctree: generated/
 
    graph_setup
 """
-from _graphs import *
+from ._graphs import *

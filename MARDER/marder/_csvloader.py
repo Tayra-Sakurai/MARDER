@@ -163,4 +163,17 @@ def load_csv_as_tex(
         )
         tf.writelines(footer)
         tf.seek(0)
-        return tf.read()
+        result = tf.read()
+    return result
+
+
+def load_headers(
+    file: TextIO
+) -> List[str]:
+    """Gets the header row of the csv.
+
+    Parameters
+    ----------
+    file : TextIO
+        The csv file.
+    """

@@ -22,7 +22,8 @@ extensions = [
     "numpydoc",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
-    "sphinx.ext.viewcode"
+    "sphinx.ext.viewcode",
+    "sphinx.ext.githubpages"
 ]
 
 templates_path = ['_templates']
